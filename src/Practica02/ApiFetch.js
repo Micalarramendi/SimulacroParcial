@@ -6,7 +6,7 @@ const ApiFetch = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users') // Reemplaza con tu API real
+    axios.get('https://jsonplaceholder.typicode.com/posts') 
       .then(response => setItems(response.data))
       .catch(error => console.log(error));
   }, []);
@@ -15,7 +15,7 @@ const ApiFetch = () => {
     <View style={styles.container}>
       <FlatList
         data={items}
-        keyExtractor={(item) => item.id.toString()} // Asegúrate de que 'id' sea un atributo único
+        keyExtractor={(item) => item.id.toString()} 
         renderItem={({ item }) => (
           <View style={styles.card}>
             <Text style={styles.title}>{item.title}</Text>
