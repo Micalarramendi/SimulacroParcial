@@ -26,7 +26,6 @@ const Componente1 = () => {
     <View style={{ padding: 20 }}>
       <Text style={{ fontSize: 20, marginBottom: 20 }}>Pantalla Principal</Text>
       
-
       {/* Input para ingresar el texto */}
       <TextInput
         style={{ borderWidth: 1, padding: 10, marginBottom: 10 }}
